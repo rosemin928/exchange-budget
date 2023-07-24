@@ -15,7 +15,46 @@
         <h1 id="greeting"></h1>
         <h2 id="krClock">00:00:00</h2>
         <h2 id="ukClock">00:00:00</h2>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <form id="todo-form">
+            <input required type="text" placeholder="Write a to-do list">
+        </form>
+        <ul id="todo-list"></ul>
+        <form id="budget">
+            <input required type="date" id="date">
+            <select name="details" size="1" id="details">
+                <option value="식비" selected>식비</option>
+                <option value="쇼핑" selected>쇼핑</option>
+                <option value="교통비" selected>교통비</option>
+            </select>
+            <input required type="number" id="amount">
+        </form>
+        <table id="account-book">
+            <caption>Account Book</caption>
+            <thread>
+                <tr>
+                    <th>시기</th>
+                    <th>내용</th>
+                    <th>지출액(파운드)</th>
+                    <th>지출액(한화)</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td><ul id="date-list"></ul></td>
+                    <td><ul id="detail-list"></ul></td>
+                    <td><ul id="uk-amount-list"></ul></td>
+                    <td><ul id="kr-amount-list"></ul></td>
+                </tr>
+            </tbody>
+        </table>
         <script src="js/login.js"></script>
         <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/budget.js"></script>
     </body>
 </html>
